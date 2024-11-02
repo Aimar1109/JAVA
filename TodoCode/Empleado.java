@@ -1,6 +1,7 @@
 package TodoCode;
 
 public class Empleado extends Persona {
+
     Double salario;
     String empresa;
 
