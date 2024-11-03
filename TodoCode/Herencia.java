@@ -20,5 +20,13 @@ public class Herencia {
         aimar.getFullName();
         juanma.getFullName();
         julen.getFullName();
+
+        // Polimorfismo
+        Persona vector[] = new Persona[3];
+        vector[0] = new Persona();
+        vector[1] = new Empleado();
+        vector[2] = new Estudiante();
+
+        System.out.println(vector);
     }
 }
