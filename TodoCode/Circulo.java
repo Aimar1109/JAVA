@@ -1,6 +1,6 @@
 package TodoCode;
 
-public class Circulo extends Figura {
+public class Circulo implements Figura, Dibujable, Rotable {
 
     private double radio;
 
@@ -9,7 +9,6 @@ public class Circulo extends Figura {
     }
 
     public Circulo(double radio, double x, double y) {
-        super(x, y);
         this.radio = radio;
     }
 
@@ -17,5 +16,15 @@ public class Circulo extends Figura {
     public double calcularArea() {
         double pi = 3.14d;
         return (radio * radio) * pi;
+    }
+
+    @Override
+    public void rotar() {
+        System.out.println("Hola estoy rotando un circulo");
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Hola estoy dibujando un circulo"); 
     }
 }

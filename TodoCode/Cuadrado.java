@@ -1,6 +1,6 @@
 package TodoCode;
 
-public class Cuadrado extends Figura {
+public class Cuadrado implements Figura, Dibujable {
 
     private double lado;
 
@@ -9,12 +9,16 @@ public class Cuadrado extends Figura {
     }
 
     public Cuadrado(double lado, double x, double y) {
-        super(x, y);
         this.lado = lado;
     }
 
     @Override // Sobreescritura
     public double calcularArea() {
         return lado * lado;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Hola estoy dibujando un cuadrado");
     }
 }
