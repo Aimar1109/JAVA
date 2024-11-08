@@ -1,0 +1,18 @@
+{"01": {
+  "edad": 22,
+  "lenguajes": [
+    "python",
+    "java"
+  ],
+  "nacimiento": "06/10/2006",
+  "nombre": "aimar"
+},
+  "02":{
+    "nombre":"juan",
+    "edad":23,
+    "lenguajes":[
+      "python",
+      "java",
+      "c",
+      "kotlin"],
+    "nacimiento":"05/12/2000"}}
