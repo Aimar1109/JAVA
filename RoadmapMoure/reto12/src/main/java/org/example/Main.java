@@ -74,12 +74,16 @@ public class Main {
                     persona.setLenguajes((JSONArray) value.get("lenguajes"));
                     personas.add(persona);
                 }
-                
+
+
+                System.out.println(personas.get(1).getNombre());
+
             } catch (IOException e) {
                 e.getStackTrace();
             }
+
+            File file = new File(filePath);
+            file.delete();
         }
-
-
     }
 }
