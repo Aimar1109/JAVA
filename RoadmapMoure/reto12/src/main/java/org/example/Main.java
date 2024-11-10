@@ -76,10 +76,9 @@ public class Main {
             } catch (IOException e) {
                 e.getStackTrace();
             }
+
+            File file = new File(filePath);
+            file.delete();
         }
-
-        File file = new File(filePath);
-        file.delete();
-
     }
 }
