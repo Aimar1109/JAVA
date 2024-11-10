@@ -4,7 +4,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
@@ -33,13 +32,13 @@ public class Main {
 
                 JSONObject juan = new JSONObject();
                 List<String> languages1 = new ArrayList<>();
-                languages.add("c");
-                languages.add("kotlin");
+                languages1.add("c");
+                languages1.add("kotlin");
 
                 juan.put("nombre", "juan");
                 juan.put("edad", 23);
                 juan.put("nacimiento", "05/12/2000");
-                juan.put("lenguajes", languages);
+                juan.put("lenguajes", languages1);
 
                 personas.put("01", aimar);
                 personas.put("02", juan);
