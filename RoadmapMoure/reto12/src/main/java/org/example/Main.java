@@ -10,10 +10,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.nio.file.Paths;
 
-
 public class Main {
     public static void main(String[] args) {
-
 
         String filePath = Paths.get("src", "main", "resources", "data.json").toString();
 
@@ -56,7 +54,7 @@ public class Main {
                 StringBuilder jsonContent = new StringBuilder();
                 String line;
 
-                while((line = lector.readLine()) != null) {
+                while ((line = lector.readLine()) != null) {
                     jsonContent.append(line);
                 }
 
@@ -74,12 +72,14 @@ public class Main {
                     persona.setLenguajes((JSONArray) value.get("lenguajes"));
                     personas.add(persona);
                 }
-                
+
             } catch (IOException e) {
                 e.getStackTrace();
             }
         }
 
+        File file = new File(filePath);
+        file.delete();
 
     }
 }
